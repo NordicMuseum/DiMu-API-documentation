@@ -30,7 +30,7 @@ Use the mediaservers at `dms01.dimu.org`, e.g.
 http://dms01.dimu.org/image/032wXVwUz7v2?dimension=250x250
 
 The identifier key should be followed by a `dimension`parameter. Possible values for dimension are:
-- max (full resolution, up to 4000px for the newest pictures
+- max (full resolution, up to 4000 px for the newest pictures)
 - 1200x1200
 - 800x800
 - 600x600
