@@ -75,6 +75,7 @@ The response will be in xml by default. Add the parameter `wt=json` for a JSON r
 | *identifier.id* | Museum or collection's own identifier / inventory no., e.g. NMK.2005.0257 |
 | *identifier.owner* | Museum or collection code, e.g. NMK-B |
 | *artifact.uniqueId* | DiMu-specific unique id for object, e.g. 021045835852 |
+| *artifact.folderUids* | Folder ID of object, i.e. find all objects in a folder |
 | *artifact.name* | Name, alternative name, etc | 
 | *artifact.type* | Type of object, e.g. 'Exhibition' |
 |* artifact.classification* | Classification. Nasjonalmuseet uses [Outline](http://kulturnav.org/a8797483-ff02-4a4c-adf1-b406cbcd6fc2) where relevant. |
