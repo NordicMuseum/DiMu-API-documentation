@@ -103,6 +103,8 @@ The response will be in xml by default. Add the parameter `wt=json` for a JSON r
 <a name="examples"></a>
 <h2>Example Solr queries</h2>
 
+Searching in fields is done by adding `field:query` as a value to the `fq` parameter. Multiple searches can be joined by AND or OR separators or by stacking multiple fq parameters. Multiple fq parameters count as an AND search.
+
 http://api.dimu.org/api/solr/select?q=*&fq=identifier.owner:S-NM*&wt=json&api.key=demo
 
 The above query will return all Nordic Museum objects in the DiMu API. Mandatory parameters for a query are the `q` parameter and an api key. The "demo" key will only return 10 rows.
