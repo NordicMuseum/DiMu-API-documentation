@@ -76,11 +76,11 @@ The response will be in xml by default. Add the parameter `wt=json` for a JSON r
 | *artifact.folderUids* | Folder ID of object, i.e. find all objects in a folder |
 | *artifact.name* | Name, alternative name, etc | 
 | *artifact.type* | Type of object, e.g. 'Exhibition' |
-|* artifact.classification* | Classification. Nasjonalmuseet uses [Outline](http://kulturnav.org/a8797483-ff02-4a4c-adf1-b406cbcd6fc2) where relevant. |
-|*artifact.pictureCount* | No. of images for this object |
-|*artifact.hasPictures* | *true* or *false* |
-|*artifact.defaultMediaIdentifier* | Id for default picture on DiMu media server (DMS) |
-|~~artifact.defaultPictureIndex~~ | Id for default picture (obsolete) |
+| *artifact.classification* | Classification. Nasjonalmuseet uses [Outline](http://kulturnav.org/a8797483-ff02-4a4c-adf1-b406cbcd6fc2) where relevant. |
+| *artifact.pictureCount* | No. of images for this object |
+| *artifact.hasPictures* | *true* or *false* |
+| *artifact.defaultMediaIdentifier* | Id for default picture on DiMu media server (DMS) |
+| ~~artifact.defaultPictureIndex~~ | Id for default picture (obsolete) |
 | *artifact.publishedDate* | Date published to DiMu |
 | *artifact.updatedDate* | Last updated |
 | *artifact.ingress.title* or *artifact.title* | Object title |
@@ -97,7 +97,8 @@ The response will be in xml by default. Add the parameter `wt=json` for a JSON r
 | *artifact.depictedPlace* | Depicted place |
 | *artifact.material* | Material |
 | *artifact.technique* | Technique |
-| *artifact.ingress.license* or *artifact.license* | Object license (not picture license) |
+| *artifact.license* | Object license (not picture license), truncated search. 'cc-by' will return 'cc-by-nc-nd' as well |
+| *artifact.ingress.license* | Object license (not picture license), exact match search. 'cc-by' will not return 'cc-by-nc-nd' |
 | *allContent* | Free text search field (default) |
 
 <a name="examples"></a>
