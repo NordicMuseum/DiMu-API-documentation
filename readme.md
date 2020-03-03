@@ -62,9 +62,16 @@ There are several searchable fields in the Solr index. Some are stored and not t
   artifact.updatedDate: "2015-09-22T07:49:19.08Z"
 }
 ```
+
+To search for a KulturNav person UUID, use `fq=related_person_relations_uss:UUID`
+
+To retrieve more than 100 responses, add `start=100` for your second query etc. `response.numFound` contains the total number of results in a query.
+
 <h4>Response formats</h4>
 
 The response will be in xml by default. Add the parameter `wt=json` for a JSON response.
+
+Add the fl parameter to select which fields to include in the response. Example: `fl=artifact.uniqueId,artifact.ingress.title,artifact.defaultMediaIdentifier` will only include those three fields.
 
 <h4>Indexed fields</h4>
 
